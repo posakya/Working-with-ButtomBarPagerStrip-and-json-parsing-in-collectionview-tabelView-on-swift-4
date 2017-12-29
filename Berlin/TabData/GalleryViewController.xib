@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="Berlin" customModuleProvider="target">
             <connections>
+                <outlet property="scrollView" destination="OFe-Bg-sM3" id="buk-r5-OfI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +19,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.51763392860000002" green="0.50566406249999996" blue="0.81545758930000001" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFe-Bg-sM3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OFe-Bg-sM3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CCj-bd-NDE"/>
+                <constraint firstAttribute="bottom" secondItem="OFe-Bg-sM3" secondAttribute="bottom" id="E9l-D9-5dv"/>
+                <constraint firstItem="OFe-Bg-sM3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SBe-YW-VHU"/>
+                <constraint firstItem="OFe-Bg-sM3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZoH-1B-AVk"/>
+                <constraint firstAttribute="trailing" secondItem="OFe-Bg-sM3" secondAttribute="trailing" id="jyf-jl-S0n"/>
+                <constraint firstItem="OFe-Bg-sM3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n08-0J-fgc"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

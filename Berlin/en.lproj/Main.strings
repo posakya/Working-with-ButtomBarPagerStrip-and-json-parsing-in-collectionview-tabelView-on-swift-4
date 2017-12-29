@@ -1,0 +1,111 @@
+
+/* Class = "UINavigationItem"; title = "Notification"; ObjectID = "0dt-ND-Oh9"; */
+"0dt-ND-Oh9.title" = "Notification";
+
+/* Class = "UITextField"; placeholder = "Telephone"; ObjectID = "2JF-SS-EwR"; */
+"2JF-SS-EwR.placeholder" = "Telephone";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "5hw-k3-pBW"; */
+"5hw-k3-pBW.normalTitle" = "SIGN IN";
+
+/* Class = "UIViewController"; title = "Location"; ObjectID = "6A1-xB-Hjt"; */
+"6A1-xB-Hjt.title" = "Location";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "8Rn-SL-kN5"; */
+"8Rn-SL-kN5.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "8zc-hr-v6r"; */
+"8zc-hr-v6r.normalTitle" = "Forgot Password?";
+
+/* Class = "UIViewController"; title = "History"; ObjectID = "AmW-1V-Bdw"; */
+"AmW-1V-Bdw.title" = "History";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "B21-7q-Gjr"; */
+"B21-7q-Gjr.title" = "Item";
+
+/* Class = "UILabel"; text = "India Restaurant - Cafe & Cocktilbar"; ObjectID = "Cgp-C7-Ek0"; */
+"Cgp-C7-Ek0.text" = "India Restaurant - Cafe & Cocktilbar";
+
+/* Class = "UIViewController"; title = "Reservation"; ObjectID = "HZT-If-DPp"; */
+"HZT-If-DPp.title" = "Reservation";
+
+/* Class = "UIViewController"; title = "Support"; ObjectID = "MSJ-jn-Foq"; */
+"MSJ-jn-Foq.title" = "Support";
+
+/* Class = "UINavigationItem"; title = "Support"; ObjectID = "ND6-jM-2iW"; */
+"ND6-jM-2iW.title" = "Support";
+
+/* Class = "UIViewController"; title = "Home"; ObjectID = "VCE-1t-eKN"; */
+"VCE-1t-eKN.title" = "Home";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Vii-jg-WSB"; */
+"Vii-jg-WSB.title" = "Item";
+
+/* Class = "UIViewController"; title = "Offer"; ObjectID = "WfJ-vC-XiM"; */
+"WfJ-vC-XiM.title" = "Offer";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Y9Y-7W-VMF"; */
+"Y9Y-7W-VMF.placeholder" = "Username";
+
+/* Class = "UIViewController"; title = "SignUp"; ObjectID = "ZbS-ya-3R4"; */
+"ZbS-ya-3R4.title" = "SignUp";
+
+/* Class = "UILabel"; text = "item"; ObjectID = "bRk-VX-2O3"; */
+"bRk-VX-2O3.text" = "item";
+
+/* Class = "UIButton"; normalTitle = "Login with Facebook"; ObjectID = "bvj-CT-zMZ"; */
+"bvj-CT-zMZ.normalTitle" = "Login with Facebook";
+
+/* Class = "UINavigationItem"; title = "Location"; ObjectID = "d2Z-cc-Rpw"; */
+"d2Z-cc-Rpw.title" = "Location";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ehK-fm-G1w"; */
+"ehK-fm-G1w.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "f48-iZ-c9G"; */
+"f48-iZ-c9G.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "f5F-JY-clq"; */
+"f5F-JY-clq.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "i5a-pC-S2f"; */
+"i5a-pC-S2f.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "kZQ-Pk-CUA"; */
+"kZQ-Pk-CUA.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Offer"; ObjectID = "mM4-0T-Nz2"; */
+"mM4-0T-Nz2.title" = "Offer";
+
+/* Class = "UIButton"; normalTitle = "Already Registered? Sign In"; ObjectID = "mc8-8J-In3"; */
+"mc8-8J-In3.normalTitle" = "Already Registered? Sign In";
+
+/* Class = "UINavigationItem"; title = "Reservation"; ObjectID = "o46-bi-B9m"; */
+"o46-bi-B9m.title" = "Reservation";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "pha-RR-axi"; */
+"pha-RR-axi.placeholder" = "Confirm Password";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "qAG-l4-Fre"; */
+"qAG-l4-Fre.title" = "Home";
+
+/* Class = "UIViewController"; title = "Notification"; ObjectID = "rIG-tX-Y8e"; */
+"rIG-tX-Y8e.title" = "Notification";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "rj8-Sb-e4X"; */
+"rj8-Sb-e4X.placeholder" = "Email";
+
+/* Class = "UINavigationItem"; title = "History"; ObjectID = "sFx-0n-H3L"; */
+"sFx-0n-H3L.title" = "History";
+
+/* Class = "UIViewController"; title = "Login "; ObjectID = "vOL-YG-gyx"; */
+"vOL-YG-gyx.title" = "Login ";
+
+/* Class = "UINavigationItem"; title = "Sign Up"; ObjectID = "vXJ-DT-oLT"; */
+"vXJ-DT-oLT.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "New Here? Sign Up"; ObjectID = "z41-LE-eOb"; */
+"z41-LE-eOb.normalTitle" = "New Here? Sign Up";
+
+/* Class = "UIButton"; normalTitle = "REGESTRIEREN"; ObjectID = "ziP-Xb-Q1r"; */
+"ziP-Xb-Q1r.normalTitle" = "REGESTRIEREN";

@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +19,123 @@
         <view opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.48250666152859778" green="1" blue="0.33785187215083923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-9D-pp1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsN-gt-iYj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-G2-IqN">
+                                    <rect key="frame" x="15" y="237.5" width="345" height="414.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT VEDIS RESTAURANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqu-Wm-Ghm">
+                                            <rect key="frame" x="10" y="8" width="325" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.42881944440000003" green="0.014431423610000001" blue="0.0080837673609999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-D5-Caf">
+                                            <rect key="frame" x="153.5" y="37" width="38" height="38"/>
+                                            <state key="normal" image="ic_info"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-NJ-PIW">
+                                            <rect key="frame" x="10" y="79" width="325" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="j0v-pt-x4t"/>
+                                            </constraints>
+                                            <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Vqu-Wm-Ghm" secondAttribute="trailing" constant="10" id="Gis-CW-2aP"/>
+                                        <constraint firstAttribute="trailing" secondItem="zQD-NJ-PIW" secondAttribute="trailing" constant="10" id="Nvj-aF-Ga7"/>
+                                        <constraint firstItem="LxE-D5-Caf" firstAttribute="top" secondItem="Vqu-Wm-Ghm" secondAttribute="bottom" constant="8" id="Sx2-ro-HQp"/>
+                                        <constraint firstItem="zQD-NJ-PIW" firstAttribute="top" secondItem="Vqu-Wm-Ghm" secondAttribute="bottom" constant="50" id="YM6-GE-akG"/>
+                                        <constraint firstItem="Vqu-Wm-Ghm" firstAttribute="top" secondItem="ZOS-G2-IqN" secondAttribute="top" constant="8" id="ktZ-Hw-xCJ"/>
+                                        <constraint firstItem="LxE-D5-Caf" firstAttribute="centerX" secondItem="ZOS-G2-IqN" secondAttribute="centerX" id="o6q-VW-rzg"/>
+                                        <constraint firstItem="zQD-NJ-PIW" firstAttribute="leading" secondItem="ZOS-G2-IqN" secondAttribute="leading" constant="10" id="uuM-S7-rUz"/>
+                                        <constraint firstItem="Vqu-Wm-Ghm" firstAttribute="leading" secondItem="ZOS-G2-IqN" secondAttribute="leading" constant="10" id="vl1-aK-Odp"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-fA-tZd">
+                                    <rect key="frame" x="0.0" y="3" width="375" height="219.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="mEf-Kw-J11">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="219.5"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vedis_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-n4-24Q">
+                                            <rect key="frame" x="87" y="30" width="201" height="102.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Restaurant - Cafe &amp; Cocktailbar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPv-hN-biH">
+                                            <rect key="frame" x="35" y="152.5" width="306" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="mEf-Kw-J11" firstAttribute="leading" secondItem="YI5-fA-tZd" secondAttribute="leading" id="048-JM-rru"/>
+                                        <constraint firstItem="mEf-Kw-J11" firstAttribute="width" secondItem="YI5-fA-tZd" secondAttribute="width" id="1kH-CI-Dcm"/>
+                                        <constraint firstAttribute="bottom" secondItem="kVh-n4-24Q" secondAttribute="bottom" constant="87" id="4tH-6q-1ft"/>
+                                        <constraint firstItem="kVh-n4-24Q" firstAttribute="top" secondItem="YI5-fA-tZd" secondAttribute="top" constant="30" id="9kt-AQ-lgc"/>
+                                        <constraint firstAttribute="bottom" secondItem="YPv-hN-biH" secondAttribute="bottom" constant="45.670000000000002" id="BLb-R5-TU0"/>
+                                        <constraint firstItem="YPv-hN-biH" firstAttribute="centerX" secondItem="YI5-fA-tZd" secondAttribute="centerX" id="Gz5-0Z-7mu"/>
+                                        <constraint firstAttribute="bottom" secondItem="mEf-Kw-J11" secondAttribute="bottom" id="asS-4Z-mPY"/>
+                                        <constraint firstAttribute="trailing" secondItem="kVh-n4-24Q" secondAttribute="trailing" constant="87" id="cdV-w7-bwy"/>
+                                        <constraint firstItem="mEf-Kw-J11" firstAttribute="height" secondItem="YI5-fA-tZd" secondAttribute="height" id="mbB-UY-ium"/>
+                                        <constraint firstItem="mEf-Kw-J11" firstAttribute="top" secondItem="YI5-fA-tZd" secondAttribute="top" id="ozE-Zt-UlO"/>
+                                        <constraint firstItem="YPv-hN-biH" firstAttribute="top" secondItem="kVh-n4-24Q" secondAttribute="bottom" constant="20" id="qDK-1l-gsb"/>
+                                        <constraint firstItem="kVh-n4-24Q" firstAttribute="leading" secondItem="YI5-fA-tZd" secondAttribute="leading" constant="87" id="w2H-Pc-8Wc"/>
+                                        <constraint firstAttribute="trailing" secondItem="mEf-Kw-J11" secondAttribute="trailing" id="wJo-Au-big"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="YI5-fA-tZd" firstAttribute="height" secondItem="LsN-gt-iYj" secondAttribute="height" multiplier="0.33" id="1Ye-LP-e3D"/>
+                                <constraint firstItem="YI5-fA-tZd" firstAttribute="width" secondItem="LsN-gt-iYj" secondAttribute="width" id="4Pr-2s-jqG"/>
+                                <constraint firstAttribute="trailing" secondItem="ZOS-G2-IqN" secondAttribute="trailing" constant="15" id="6Qz-Zo-YVd"/>
+                                <constraint firstItem="ZOS-G2-IqN" firstAttribute="top" secondItem="YI5-fA-tZd" secondAttribute="bottom" constant="15" id="BwC-jy-NYb"/>
+                                <constraint firstItem="YI5-fA-tZd" firstAttribute="leading" secondItem="LsN-gt-iYj" secondAttribute="leading" id="CIv-at-72L"/>
+                                <constraint firstAttribute="trailing" secondItem="YI5-fA-tZd" secondAttribute="trailing" id="Etv-18-ziw"/>
+                                <constraint firstAttribute="bottom" secondItem="ZOS-G2-IqN" secondAttribute="bottom" constant="15" id="Jo8-yk-BOu"/>
+                                <constraint firstItem="ZOS-G2-IqN" firstAttribute="leading" secondItem="LsN-gt-iYj" secondAttribute="leading" constant="15" id="MD2-Ii-tK5"/>
+                                <constraint firstItem="YI5-fA-tZd" firstAttribute="top" secondItem="LsN-gt-iYj" secondAttribute="top" constant="3" id="ObT-au-B4P"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LsN-gt-iYj" secondAttribute="trailing" id="2G2-Zo-pEF"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="top" secondItem="Jgf-9D-pp1" secondAttribute="top" id="4Ex-G1-aAq"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="centerY" secondItem="Jgf-9D-pp1" secondAttribute="centerY" id="L4g-9k-bbG"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="centerY" secondItem="Jgf-9D-pp1" secondAttribute="centerY" id="Mfh-hc-LoF"/>
+                        <constraint firstAttribute="bottom" secondItem="LsN-gt-iYj" secondAttribute="bottom" id="OME-oC-bcP"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="centerX" secondItem="Jgf-9D-pp1" secondAttribute="centerX" id="SZN-c0-kRy"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="centerX" secondItem="Jgf-9D-pp1" secondAttribute="centerX" id="nql-80-PAY"/>
+                        <constraint firstItem="LsN-gt-iYj" firstAttribute="leading" secondItem="Jgf-9D-pp1" secondAttribute="leading" id="tsw-wK-Wyy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+            <constraints>
+                <constraint firstItem="Jgf-9D-pp1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2bH-je-g7T"/>
+                <constraint firstItem="Jgf-9D-pp1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mkq-R0-rBm"/>
+                <constraint firstAttribute="bottom" secondItem="Jgf-9D-pp1" secondAttribute="bottom" id="kas-9q-mVK"/>
+                <constraint firstAttribute="trailing" secondItem="Jgf-9D-pp1" secondAttribute="trailing" id="nhR-2v-6SO"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="301.5" y="-34.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_info" width="38" height="38"/>
+        <image name="login" width="1242" height="2120"/>
+        <image name="vedis_logo" width="683" height="286"/>
+    </resources>
 </document>

@@ -7,4 +7,12 @@ target 'Berlin' do
 
   pod 'XLPagerTabStrip', :git => 'https://github.com/KelvinJin/XLPagerTabStrip', :branch => 'swift3'
   pod 'SDWebImage', '~> 4.0'
+  pod 'Alamofire’
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'NVActivityIndicatorView'
+  pod 'SQLite.swift', '~> 0.11.4'
+  pod 'PayPal-iOS-SDK'
+  pod 'hkGraddiant'
+  pod 'SwiftyJSON'
 end

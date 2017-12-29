@@ -9,7 +9,7 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-
+    
     
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var labelTitle: UILabel!

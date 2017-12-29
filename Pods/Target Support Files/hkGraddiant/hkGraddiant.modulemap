@@ -1,0 +1,6 @@
+framework module hkGraddiant {
+  umbrella header "hkGraddiant-umbrella.h"
+
+  export *
+  module * { export * }
+}

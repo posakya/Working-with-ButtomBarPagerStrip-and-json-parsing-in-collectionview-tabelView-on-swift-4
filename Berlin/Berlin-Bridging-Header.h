@@ -3,3 +3,6 @@
 //
 
 #import "SWRevealViewController.h"
+
+#import "PayPalMobile.h"
+#import <QuartzCore/QuartzCore.h>

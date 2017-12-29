@@ -21,7 +21,6 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
 import Foundation
 
 public enum ButtonBarItemSpec<CellType: UICollectionViewCell> {
@@ -47,7 +46,7 @@ public struct ButtonBarPagerTabStripSettings {
         public var buttonBarMinimumLineSpacing: CGFloat?
         public var buttonBarLeftContentInset: CGFloat?
         public var buttonBarRightContentInset: CGFloat?
-
+        
         public var selectedBarBackgroundColor = UIColor.black
         public var selectedBarHeight: CGFloat = 5
         
@@ -56,7 +55,7 @@ public struct ButtonBarPagerTabStripSettings {
         public var buttonBarItemLeftRightMargin: CGFloat = 8
         public var buttonBarItemTitleColor: UIColor?
         public var buttonBarItemsShouldFillAvailiableWidth = true
-       
+        
         // only used if button bar is created programaticaly and not using storyboards or nib files
         public var buttonBarHeight: CGFloat?
     }
@@ -93,18 +92,18 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
         newContainerViewFrame.size.height = self.containerView.frame.size.height - (buttonBarHeight - self.containerView.frame.origin.y)
         self.containerView.frame = newContainerViewFrame
         return buttonBar
-    }()
+        }()
     
     lazy fileprivate var cachedCellWidths: [CGFloat]? = { [unowned self] in
         return self.calculateWidths()
-    }()
+        }()
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         delegate = self
         datasource = self
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         delegate = self
@@ -130,7 +129,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
         flowLayout.minimumLineSpacing = settings.style.buttonBarMinimumLineSpacing ?? flowLayout.minimumLineSpacing
         let sectionInset = flowLayout.sectionInset
         flowLayout.sectionInset = UIEdgeInsetsMake(sectionInset.top, self.settings.style.buttonBarLeftContentInset ?? sectionInset.left, sectionInset.bottom, self.settings.style.buttonBarRightContentInset ?? sectionInset.right)
-
+        
         buttonBarView.showsHorizontalScrollIndicator = false
         buttonBarView.backgroundColor = settings.style.buttonBarBackgroundColor
         buttonBarView.selectedBar.backgroundColor = settings.style.selectedBarBackgroundColor
@@ -281,7 +280,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
         if let highlightedImage = indicatorInfo.highlightedImage {
             cell.imageView.highlightedImage = highlightedImage
         }
-
+        
         configureCell(cell, indicatorInfo: indicatorInfo)
         
         if pagerBehaviour.isProgressiveIndicator {

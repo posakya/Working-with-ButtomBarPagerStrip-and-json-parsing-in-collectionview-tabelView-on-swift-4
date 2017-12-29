@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_screen" translatesAutoresizingMaskIntoConstraints="NO" id="VKX-qR-Kft">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="fi0-cM-lmi">
+                                <rect key="frame" x="122" y="273.5" width="130" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="0sP-ad-6Pv"/>
+                                    <constraint firstAttribute="height" constant="120" id="hJe-SE-TJ8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fi0-cM-lmi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0RX-qf-cpM"/>
+                            <constraint firstItem="fi0-cM-lmi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5Oi-kH-KUw"/>
+                            <constraint firstAttribute="trailing" secondItem="VKX-qR-Kft" secondAttribute="trailing" id="HDG-PJ-onT"/>
+                            <constraint firstAttribute="bottom" secondItem="VKX-qR-Kft" secondAttribute="bottom" id="VVZ-XB-gLi"/>
+                            <constraint firstItem="VKX-qR-Kft" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="sk0-Uh-rSd"/>
+                            <constraint firstItem="VKX-qR-Kft" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yd9-jU-TFv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +45,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loading_screen" width="1242" height="2208"/>
+        <image name="sun" width="475" height="468"/>
+    </resources>
 </document>

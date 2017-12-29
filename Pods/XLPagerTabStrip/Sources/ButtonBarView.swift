@@ -63,12 +63,12 @@ open class ButtonBarView: UICollectionView {
         addSubview(selectedBar)
     }
     
-//    open override func layoutSubviews() {
-//        super.layoutSubviews()
-//        
-//        selectedBar.frame.origin.y = self.frame.size.height - CGFloat(self.selectedBarHeight)
-//    }
-//    
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        selectedBar.frame.origin.y = self.frame.size.height - CGFloat(self.selectedBarHeight)
+    }
+    
     open func moveToIndex(_ toIndex: Int, animated: Bool, swipeDirection: SwipeDirection, pagerScroll: PagerScroll) {
         selectedIndex = toIndex
         updateSelectedBarPosition(animated, swipeDirection: swipeDirection, pagerScroll: pagerScroll)

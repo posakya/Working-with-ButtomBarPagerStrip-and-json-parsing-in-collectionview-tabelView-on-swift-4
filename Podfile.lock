@@ -1,11 +1,67 @@
 PODS:
+  - Alamofire (4.5.1)
+  - CardIO (5.4.1)
+  - Firebase/Core (4.8.0):
+    - FirebaseAnalytics (= 4.0.5)
+    - FirebaseCore (= 4.0.13)
+  - Firebase/Messaging (4.8.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.8)
+  - FirebaseAnalytics (4.0.5):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.13):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.8):
+    - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.0.8):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - hkGraddiant (1.0.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.0.1):
+    - NVActivityIndicatorView/Presenter (= 4.0.1)
+  - NVActivityIndicatorView/Presenter (4.0.1)
+  - PayPal-iOS-SDK (2.18.0):
+    - PayPal-iOS-SDK/CardIO (= 2.18.0)
+    - PayPal-iOS-SDK/Core (= 2.18.0)
+  - PayPal-iOS-SDK/CardIO (2.18.0):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.0)
+  - Protobuf (3.5.0)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
+  - SQLite.swift (0.11.4):
+    - SQLite.swift/standard (= 0.11.4)
+  - SQLite.swift/standard (0.11.4)
+  - SwiftyJSON (4.0.0)
   - XLPagerTabStrip (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Firebase/Core
+  - Firebase/Messaging
+  - hkGraddiant
+  - NVActivityIndicatorView
+  - PayPal-iOS-SDK
   - SDWebImage (~> 4.0)
+  - SQLite.swift (~> 0.11.4)
+  - SwiftyJSON
   - XLPagerTabStrip (from `https://github.com/KelvinJin/XLPagerTabStrip`, branch `swift3`)
 
 EXTERNAL SOURCES:
@@ -19,9 +75,24 @@ CHECKOUT OPTIONS:
     :git: https://github.com/KelvinJin/XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
+  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
+  FirebaseCore: 3c02ec652db3d03fdc8bc6d9154af3e20d64b6f5
+  FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
+  FirebaseMessaging: dfdcd307c2382290a1e297a81d0f18370f5b1bcd
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  hkGraddiant: a2b58a4a1ae75444342e0a98881703aa75b87d46
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: 77ed6d7b571643e24899e7858bf9ae2ee4c21f31
+  PayPal-iOS-SDK: 3fc74982a68d54eeaf39e09f507f279dc2291860
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   XLPagerTabStrip: 87b8b705f9a7178e76a063ffaa2d70045944a965
 
-PODFILE CHECKSUM: 1dc51b04a5faa4308e45a00d8d3d857e98655593
+PODFILE CHECKSUM: 0ee4c5721411593059842b98a8e003bccd1a6826
 
 COCOAPODS: 1.3.1

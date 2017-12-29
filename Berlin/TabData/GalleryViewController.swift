@@ -8,6 +8,7 @@
 
 import UIKit
 import XLPagerTabStrip
+import SDWebImage
 
 struct jsonData : Decodable {
     let Image : String
@@ -15,6 +16,7 @@ struct jsonData : Decodable {
 
 class GalleryViewController: UIViewController,IndicatorInfoProvider {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     var itemInfo: IndicatorInfo = "View"
     
     var jsonDatas = [jsonData]()
@@ -31,15 +33,20 @@ class GalleryViewController: UIViewController,IndicatorInfoProvider {
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo
-    
+        
     {
         return itemInfo
     }
     
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        SetAnimation.forDataFetching.startAnimation()
+        
+        scrollView.frame = view.frame
         
         let jsonUrl = "http://appybite.com/Vedis/Vedis/gallery_api.php"
         let url = URL(string: jsonUrl)
@@ -51,12 +58,26 @@ class GalleryViewController: UIViewController,IndicatorInfoProvider {
             
             do {
                 
+                SetAnimation.forDataFetching.stopAnimation()
+                
                 self.jsonDatas = try JSONDecoder().decode([jsonData].self, from: data!)
-              
-                for eachImage in self.jsonDatas {
+                
+                print("Array ", self.jsonDatas.count)
+                
+                for i in 0..<self.jsonDatas.count {
                     
-                    print("Image", eachImage.Image)
-            
+                    
+                    let imageView = UIImageView()
+                    let xPos = self.view.frame.width * CGFloat(i)
+                    let imageUrl: String = "http://appybite.com/Vedis/Vedis/Image/"+self.jsonDatas[i].Image
+                    print("DownloadImage",imageUrl)
+                    imageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
+                    imageView.contentMode = .scaleAspectFit
+                    imageView.frame = CGRect(x: xPos, y: 0, width: self.scrollView.frame.width, height: self.scrollView.frame.height)
+                    
+                    self.scrollView.contentSize.width = self.scrollView.frame.width * CGFloat(i + 1)
+                    self.scrollView.addSubview(imageView)
+                    
                 }
                 
             }
@@ -69,7 +90,7 @@ class GalleryViewController: UIViewController,IndicatorInfoProvider {
             }.resume()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
